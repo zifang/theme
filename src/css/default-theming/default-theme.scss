@@ -1,0 +1,8 @@
+@import '../theming/all-theme';
+$primary: jr-palette($jr-blue);
+$accent: jr-palette($jr-cyan, A200, A100, A400);
+$theme: jr-dark-theme($primary, $accent);
+
+.default-theme {
+    @include gr-theme($theme);
+}

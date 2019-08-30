@@ -1,0 +1,20 @@
+@import '../../css/theming/theming.scss';
+@mixin jr-header-theme($theme) {
+    $primary: map-get($theme, primary);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+    .jr-header {
+        background-color: jr-color($primary, 500);
+        color: jr-color($foreground, text);
+        a {
+            color: jr-color($foreground, text);
+        }
+        ul.nav-inline {
+            li {
+                &:hover {
+                    background-color: jr-color($primary, 500);
+                }
+            }
+        }
+    }
+}

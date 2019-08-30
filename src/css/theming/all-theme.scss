@@ -1,0 +1,5 @@
+@import '../../components/header/header-theme.scss';
+
+@mixin gr-theme($config) {
+    @include jr-header-theme($config);
+}

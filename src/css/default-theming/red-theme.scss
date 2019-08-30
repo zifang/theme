@@ -1,0 +1,8 @@
+@import '../theming/all-theme.scss';
+$primary: jr-palette($jr-red);
+$accent: jr-palette($jr-brown, A200, A100, A400);
+$theme: jr-dark-theme($primary, $accent);
+
+.red-theme {
+    @include gr-theme($theme);
+}
